@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1 class="Login">Login</h1>
+            <div class="form-group usuario-group">
+                <label for="Usuario">Usuário:</label>
+                <input type="text" id="Usuario" name="Usuario" required>
+            </div>
+            <div class="form-group senha-group">
+                <label for="Senha">Senha:</label>
+                <input type="password" id="Senha" name="Senha" required>
+            </div>
+            <button id="loginButton" type="button">Login</button>
+            <p id="loginMessage" style="display: none; color: #D3D7DF; text-align: center; margin-top: 10px;">Você logou com sucesso!</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="forgot-password">Esqueceu a senha?</a>
+        </form>
+    </div>
+    <script>
+        const validUser = "admin";
+        const validPassword = "1234";
+
+        document.getElementById("loginButton").addEventListener("click", function() {
+            const usuario = document.getElementById("Usuario").value.trim();
+            const senha = document.getElementById("Senha").value.trim();
+
+            if (usuario === validUser && senha === validPassword) {
+                const loginMessage = document.getElementById("loginMessage");
+                loginMessage.style.display = "block"; 
+            } else {
+                alert("Usuário ou senha incorretos!"); 
+            }
+        });
+    </script>    
+</body>
+</html>

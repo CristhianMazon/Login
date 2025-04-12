@@ -1,0 +1,113 @@
+body {
+    background-color: #464D6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 550px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #363B51;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative; 
+}
+
+h1.Login {
+    color: #D3D7DF;
+    margin-left: 50px;
+    margin-top: 80px;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    margin-bottom: 220px;
+    font-size: 33px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #D3D7DF;
+    margin-bottom: 10px;
+    margin-left: 39px;
+    margin-top: 5px;
+}
+
+.usuario-group {
+    position: absolute;
+    width: 90%;
+    top: 250px;
+    left: 30px; 
+}
+
+.senha-group {
+    position: absolute;
+    width: 90%; 
+    top: 350px; 
+    left: 30px; 
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    width: 80%; 
+    padding: 5px;
+    margin-left: 40px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-bottom: 2px solid #A13954;
+}
+
+button {
+    width: 80%;
+    margin-left: 48px;
+    padding: 15px 0;
+    margin-top: 80px;
+    background: #A13954;
+    color: #D3D7DF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #8B2E45;
+}
+
+a.forgot-password {
+    display: block;
+    text-align: center;
+    color: #D3D7DF;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.forgot-password:hover {
+    color: #A13954;
+}
+
+.senha-group input {
+    width: 80%; 
+    padding: 5px; 
+    margin-left: 40px; 
+}

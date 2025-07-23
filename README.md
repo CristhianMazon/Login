@@ -27,4 +27,4 @@ Este repositório contém o código para uma tela de login simples e responsiva,
 
 Você pode acessar a página de login online neste link:
 
-➡️ [Tela de Login - Cristhian Silveira Mazon](https://cristhianmazon.github.io/Login/)
+➡️ [Clique aqui](https://cristhianmazon.github.io/Login/)
